@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slideshow</title>
+        <script>
+            var i=0,time=1000;
+            img=["one.jpg","two.jpg","three.jpg","m1.jpg","m2.jpg","m3.jpg"];
+            function slide(){
+                document.images.src=img[i];
+                if(i<img.length-1){
+                     i++;
+                }
+                 else{
+                    i=0;
+                }
+                setTimeout("slide()",time);
+            }
+            slide();
+        </script>
+    </head>
+    <body>
+        <center>
+            <img name="images" height="400px" width="400px">
+        </center>
+    </body>
+</html>

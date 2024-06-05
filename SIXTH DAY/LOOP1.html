@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Looping Statements</title>
+    <script>
+      document.write("For Loop:<br>");
+      for (let i = 0; i <= 10; i++) {
+        document.write("Number is:" + i + "<br>");
+      }
+      document.write("<hr><br><br>For in Loop:<br>");
+      var obj = { 1: "a", 2: "b", 3: "ch", 4: "str", 5: "tag" };
+      for (let x in obj) {
+        document.write("Key   is:" + x + "<br>");
+        document.write("Value is:" + obj[x] + "<br>");
+        document.write("<br>");
+      }
+      document.write("<hr><br><br>For of Loop:<br>");
+      var tag = ["h1", "h2", 3, 4, "h3", "h4"];
+      for (let j of tag) {
+        document.write("Value of Array:" + j + "<br>");
+      }
+      document.write("<hr><br><br>While Loop:<br>");
+      let i = 0;
+      while (i <= 5) {
+        document.write("Number is:" + i + "<br>");
+        i++;
+      }
+      document.write("<hr><br><br>Do While Loop:<br>");
+      let j = 0;
+      do {
+        document.write("Number is:" + j + "<br>");
+        j++;
+      } while (j<= 5);
+    </script>
+  </head>
+  <body></body>
+</html>

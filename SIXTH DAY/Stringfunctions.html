@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Functions</title>
+        <script>
+            var s1="Hello World! This is Sample string Contents";
+            document.write("Number of Characters:",s1.length);
+            esp1=s1.slice(-43);
+            esp2=s1.substring(12,20);
+            esp3=s1.substr(5,s1.length);
+            document.write("<br>Extracting String Parts:<br>",esp1,"<br>",esp2,"<br>",esp3);
+            var rep=s1.replace("World","Everyone");
+            var up=s1.toUpperCase();
+            var low=s1.toLowerCase();
+            document.write("<br>Replaced String:",rep);
+            document.write("<br>Uppercase:",up,"<br>Lowercase:",low);
+            var s2="hi",s3="world";
+            var join=s2.concat(" ",s3);
+            document.write("<br>Concatenation:",join);
+            let text="7";
+            let pg1=text.padStart(10,"x");
+            let pg2=text.padEnd(10,"x");
+            document.write("<br>padStart: ",pg1,"<br>padStart:",pg2);
+            let ch=s1.charAt(10);
+            let un=s1.charCodeAt(5);
+            let pa=s1[8];
+            document.write("<br>",ch,"<br>",un,"<br>",pa);
+            let s4="one Two Three Four Five";
+            let arr=s4.split(" ");
+            document.write("<br>Array is:",arr);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

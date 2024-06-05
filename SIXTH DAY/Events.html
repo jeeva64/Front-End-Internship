@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events in Js</title>
+    <script>
+        function fun(){
+            var n=document.getElementById("fname").value;
+            if(n==""){
+                alert("Enter Your Name");
+                return false;
+            }
+            alert("Registered successfully");
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="this.innerHTML='Hi'">Hello</h1>
+    <form action="" onsubmit="fun()">
+        <input type="text" id="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

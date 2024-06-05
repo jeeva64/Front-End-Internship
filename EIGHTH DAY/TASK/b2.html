@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .tit {
+        text-decoration: underline;
+        text-align: center;
+      }
+      label {
+        font-size: x-large;
+        font-family: courier;
+        font-weight: 300;
+      }
+    </style>
+</head>
+<body>
+  <div class="container bg-info">
+        <h1 class="text-primary tit">Register</h1>
+        <form action="" class="form-group">
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="fname">Firstname:</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Enter Your Firstname:"
+                class="form-control"
+              /><br><br>
+              <label for="phone">Mobile Number:</label>
+              <input
+                type="number"
+                id="phone"
+                required
+                placeholder="Enter Your Phone Number"
+                class="form-control"
+              /> <br><br>
+              <label for="dn">Door Number:</label>
+              <input
+                type="number"
+                id="dn"
+                placeholder="Enter Your Door Number"
+                class="form-control"
+              /> <br><br>
+              <label for="state">State:</label>
+              <input
+                type="text"
+                id="state"
+                placeholder="Enter Your State"
+                class="form-control"
+              /> <br><br>
+              <label for="profile">Upload Your Profile Picture:</label>
+              <input
+                type="file"
+                required
+                id="profile"
+                accept="jpg"
+                class="form-control"
+              /> <br></br>
+              <label for="uname">Username:</label>
+              <input
+                type="text"
+                id="uname"
+                placeholder="Enter Your Username:"
+                class="form-control"
+              /> <br><br>
+            </div>
+            <div class="col-sm-6">
+              <label for="lname">Lastname:</label>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Enter Your Lastname:"
+                class="form-control"
+              /><br /><br />
+              <label for="mail">Email:</label>
+              <input
+                type="email"
+                id="mail"
+                required
+                placeholder="Enter Your Email"
+                class="form-control"
+              /><br /><br />
+              <label for="city">City:</label>
+              <input
+                type="text"
+                id="city"
+                placeholder="Enter Your City"
+                class="form-control"
+              /><br /><br />
+              <label for="pc">Pin-code:</label>
+              <input
+                type="number"
+                id="pc"
+                placeholder="Enter Your Pincode"
+                class="form-control"
+              /><br /><br />
+              <label for="sid">Student Id:</label>
+              <input
+                type="text"
+                id="sid"
+                placeholder="Enter Your ID"
+                class="form-control"
+              /><br /><br />
+              <label for="pass">Password:</label>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Enter Your Password"
+                class="form-control"
+              /><br /><br />
+            </div>
+          </div>
+          <div class="row">
+            <center>
+              <input
+                class="btn btn-lg btn-primary"
+                type="button"
+                value="Register"
+              />
+            </center>
+          </div>
+        </form>
+  </div>
+</body>
+</html>

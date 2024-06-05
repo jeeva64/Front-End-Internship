@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function validate() {
+        var user = document.getElementById("uname").value;
+        var pass = document.getElementById("upass").value;
+        if (user == "") {
+          alert("Enter Your Username");
+          return false;
+        }
+        if (pass == "") {
+          alert("Enter Your Password");
+          return false;
+        }
+        if (user == "admin" && pass == "h1h2h3") {
+          alert("Login Successfull");
+        }
+        if (user != "admin" || pass != "h1h2h3") {
+          alert("Invalid Username or Password");
+          return false;
+        }
+      }
+    </script>
+    <style>
+      #tit {
+        font-size: xx-large;
+        color: cornsilk;
+      }
+      #f1,
+      #f2,
+      #f3 {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 20px;
+      }
+      #n1 {
+        padding: 0px 150px 0px 150px;
+      }
+      #n2 {
+        padding: 0px 125px 0px 125px;
+      }
+      #n3 {
+        padding: 0px 125px 0px 125px;
+      }
+      #n1,
+      #n2,
+      #n3 {
+        text-decoration: none;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 600;
+        color: aliceblue;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+      }
+      #fp {
+        padding: 20px;
+        font-size: medium;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 900px;
+      }
+      nav {
+        height: 160px;
+        width: 100%;
+      }
+      #navc {
+        background-color: crimson;
+        position: fixed;
+        opacity: 0.9;
+        padding: 15px 0px 0px 15px;
+      }
+      #b1,
+      #b2 {
+        padding: 0px 50px 0px 50px;
+        float: right;
+        border-radius: 50px;
+        font-size: xx-large;
+      }
+      #container {
+        padding-top: 200px;
+        height: 300px;
+        width: 100%;
+        background-image: url("loginbg.jpg");
+      }
+      label {
+        font-size: xx-large;
+        font-weight: bold;
+        color: cornsilk;
+      }
+      #fpass {
+        text-decoration: none;
+        font-size: large;
+        font-weight: 100;
+        color: cornsilk;
+      }
+      #uname,
+      #upass {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        border: 3px solid black;
+      }
+      #footc {
+        background-color: crimson;
+        width: auto;
+        height: 200px;
+        padding: 30px;
+        border-top: 5px;
+        border-top-color: rgb(94, 184, 226);
+        border-top-style: solid;
+      }
+      #sbtn,
+      #rbtn {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-weight: 400;
+      }
+      #sbtn:hover,
+      #rbtn:hover {
+        background-color: #0b8be0;
+      }
+      form {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navc">
+      <img src="logo.jpg" alt="Elite logo" height="75px" width="75px" />
+      <h2>Elite Academy</h2>
+      <table align="center" cellpadding="30px">
+        <tr>
+          <a href="S:\VS CODE\internship\FOURTH DAY\TASK\Page1.html" id="n1">Home</a>
+          <a href="" id="n2">About</a>
+          <a
+            href="S:\VS CODE\internship\THIRD DAY\TASK\Page.html"
+            target="_blank"
+            id="n3"
+            >Contact Us</a
+          >
+        </tr>
+        <tr>
+          <a
+            id="b1"
+            href="S:\VS CODE\internship\FOURTH DAY\TASK\signup.html"
+            target="_blank"
+            ><button>Sign up</button></a
+          >
+          <a
+            id="b2"
+            href="S:\VS CODE\internship\FOURTH DAY\TASK\signin.html"
+            target="_self"
+            ><button>Sign in</button></a
+          >
+        </tr>
+      </table>
+    </nav>
+    <section id="container">
+      <center>
+        <form method="post" id="cc" name="signin">
+          <h1 id="tit">Login Page</h1><br /><br />
+          <label for="uname">UserName: </label>
+          <input placeholder="                   Enter Your Username"
+            type="text" id="uname" name="uname" required/><br /><br />
+          <label for="upass">Password: </label>
+          <input placeholder="                     Enter Your Password"
+            type="password" id="upass" name="pass" required/><br /><br />
+          <input type="submit" id="sbtn" value="Submit" name="submit" onclick="validate()" />
+          <input type="button" id="rbtn" value="Reset" /><br /><br />
+          <a href="" id="fpass">Forgot password?</a>
+        </form>
+      </center>
+    </section>
+    <footer id="footc">
+      <center>
+        <a href="" id="f1">Home</a>
+        <a href="" id="f2">About Us</a>
+        <a
+          href="S:\VS CODE\internship\THIRD DAY\TASK\Page.html"
+          id="f3"
+          target="_blank"
+          >Contact Us</a
+        >
+        <br /><br />
+        <h2>Communication Address</h2>
+        <br />
+        <tr>
+          346,ECS Road
+        </tr>
+        <br />
+        <tr>
+          College Street
+        </tr>
+        <br />
+        <tr>
+          Chennai-620876
+        </tr>
+        <br />
+        <p id="fp">&copy;Copyrights Reserved<br />All Rights Reserved</p>
+      </center>
+    </footer>
+  </body>
+</html>

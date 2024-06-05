@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS2</title>
+    <script>
+      function add() {
+        var n1 = parseFloat(document.getElementById("dy1").value);
+        var n2 = parseFloat(document.getElementById("dy2").value);
+        var result = n1 + n2;
+        document.getElementById("res").innerHTML = "Addition:"+result;
+      }
+    </script>
+  </head>
+  <body>
+    <center><br><br><br><br>
+      <h1>SUM</h1><br><br>
+      <label for="dy1">Number 1:</label><input type="number" id="dy1" /><br /><br />
+      <label dy1="dy2">Number 2:</label><input type="number" id="dy2" /><br /><br />
+      <button onclick="add()">Add</button>
+    </center> 
+    <h1 id="res"></h1>
+  </body>
+</html>

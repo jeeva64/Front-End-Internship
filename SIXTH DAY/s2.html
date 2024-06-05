@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slideshow</title>
+        <script>
+            var i=0;
+            img=["two.jpg","three.jpg","m1.jpg","m2.jpg","m3.jpg"];   
+            function next(){
+                if(i<=img.length-1){
+                     document.images.src=img[i];
+                     i++;
+                }
+                 else{
+                    i=0;
+                    document.images.src=img[i];
+                }
+            }
+            function previous(){
+               if(i<=img.length-1){
+                    document.images.src=img[i];
+                    i--;
+                }
+                else{
+                    i=5;
+                    document.images.src=img[i];
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <img name="images" height="400px" width="400px" src="one.jpg"><br><br>
+            <button onclick="previous()">Previous</button><button onclick="next()">Next</button>
+        </center>
+    </body>
+</html>

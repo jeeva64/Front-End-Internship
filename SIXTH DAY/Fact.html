@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Looping Statements</title>
+        <script>
+            var fac=1;
+            function iterates(){
+                let n=document.getElementById("ip1").value;
+                let i=1;
+                for(i=1;i<=n;i++){
+                    fac*=i;
+                }
+                document.getElementById("res").innerHTML=fac;
+            }
+        </script>
+    </head>
+    <body>
+        <center><br><br><br><br>
+            <h1>Factorial of a Number</h1><br><br>
+            <label for="ip1">Number: </label><input type="number" id="ip1" /><br /><br />
+            <button onclick="iterates()">Find</button>
+        </center> 
+        <h1 id="res"></h1>
+    </body>
+</html>

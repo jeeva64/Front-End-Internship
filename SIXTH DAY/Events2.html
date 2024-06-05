@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Events2 in Js</title>
+
+    <script>
+      function up() {
+        document.getElementById("txt").src= "lightoff.jpg";
+      }
+      function down() {
+        document.getElementById("txt").innerHTML ="light-bulb-on.webp";
+      }
+    </script>
+  </head>
+  <body>
+    <img src="light-bulb-on.webp" id="txt" onmousedown="down()" onmouseup="up()" >
+  </body>
+</html>

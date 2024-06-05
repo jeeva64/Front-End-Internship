@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Password</title>        
+        <style>
+            *{
+                margin:0px;
+                padding: 0px;
+            }
+            #nav{
+                width:100%;
+                height:100px;
+                background-color: #00abe4;
+                opacity: 0.9;
+                border: 5px solid cyan;
+            }
+            #tit,#vle{
+                display:inline;
+                padding:0px 10px 0px 10px;
+            }
+            #tit{
+                margin-top: 15px;
+                font-size: 50px;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #rgr:hover,#lgn:hover{
+                text-decoration: underline;
+            }
+            #vle{
+                float: right;
+                margin-top: -30px;
+            }
+            #abt,#rgr,#lgn{
+                padding-left: 320px;
+                text-decoration: none;
+                color:ivory;
+                font-size: x-large;
+            }
+            label{
+                font-size: xx-large;
+            }
+            input{
+                height: 25px;
+                width: 200px;
+                border-radius: 10px;
+                border:2px solid; 
+            }
+            body{
+                background-color: #e9f1fa;
+            }
+            footer{
+                margin-top: 3px;
+                background-color: #00abe4;
+                opacity: 0.9;
+                border: 5px solid cyan;
+            }
+            body{
+                background-color:lightgoldenrodyellow;
+                opacity:0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="nav">
+                <tr>
+                    <h1 id="tit">Elite Academy</h1>
+                    <ul id="vle">
+                        <a href="#" id="abt">About</a>
+                        <a href="Regist.html" id="rgr" target="_blank">Register</a>
+                        <a href="login.html" id="lgn" target="_blank">Log in</a>
+                    </ul>
+                </tr>
+        </header>
+        <center>
+            <h1>Change Password</h1><br><br>
+            <label for="name">Username: </label>
+            <input type="text" id="uname" placeholder="  Enter Your Name" required><br><br>
+            <label for="opass">Old Password: </label>
+            <input placeholder="  Enter Your Old Password"type="password" id="opass" required/><br /><br />
+            <label for="upass">New Password: </label>
+            <input placeholder="  Enter Your New Password"type="password" id="upass" required/><br /><br />
+            <label for="cpass">Confirm Password: </label>
+            <input placeholder="  Enter Your Confirm Password"type="password" id="cpass" required/><br /><br />
+            <button onclick="chgpass()">Change</button>
+        </center>    
+        <footer>
+            <center><br><br>
+                <li class="abt"><a href="#">About</a></li>
+                <li class="rgr"><a href="Regist.html" target="_blank">Register</a></li>
+                <li class="lgn"><a href="login.html" target="_blank">Log in</a></li>
+                <br>
+                <h2>Communication Address</h2>
+                <address>253,ESR Road,<br>College Street,<br>Chennai-620675</address>
+                <p>&copy;Copyrights Reserved</p>
+                <p>All Rights Reserved</p><br>
+                </center>
+        </footer>
+        <script>
+            function chgpass() {
+                var user = document.getElementById("uname").value;
+                var opass=document.getElementById("opass").value;
+                var npass = document.getElementById("upass").value;
+                var cpass=document.getElementById("cpass").value;
+                if (user == "") {
+                    alert("Enter Your Username");
+                    return false;
+                }
+                if (opass == "") {
+                    alert("Enter Your Old Password");
+                    return false;
+                }
+                if (npass == "") {
+                    alert("Enter Your New Password");
+                    return false;
+                }
+                if (cpass == "") {
+                    alert("Enter Your Confirm Password");
+                    return false;
+                }
+                if(npass==cpass){
+                    alert("Password Changed Successfully");
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

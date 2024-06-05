@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Functions</title>
+        <script>
+            var tag = ["h1", "h2", 3, 4, "h3", "h4"];
+            document.write(tag.length);
+            var tst=tag.toString();
+            document.write("<br>String: ",tst);
+            tag.push("h5");
+            document.write("<br>Push :",tag);
+            tag.pop();
+            document.write("<br>Pop :",tag);
+            tag[0]="h6";
+            document.write("<br>Index Replace:",tag);
+            var s2=["hi",'hello'],s3=["world",'Everyone'];
+            var join=s2.concat(s3);
+            document.write("<br>Concatenation:",join);
+            
+        </script>
+    </head>
+    <body>
+        <p id="dy"></p>
+    </body>
+</html>

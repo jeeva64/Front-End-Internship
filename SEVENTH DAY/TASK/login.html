@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in</title>
+    <script>
+        function Validate() {
+                var user = document.getElementById("uname").value;
+                var pass = document.getElementById("upass").value;
+                if (user == "") {
+                    alert("Enter Your Username");
+                    return false;
+                }
+                if (pass == "") {
+                    alert("Enter Your Password");
+                    return false;
+                }
+                if (user == "admin" && pass == "h1h2h3") {
+                    alert("Login Successfull");
+                    
+                }
+                if (user != "admin" || pass != "h1h2h3") {
+                    alert("Invalid Username or Password");
+                    return false;
+                }
+        }
+    </script>
+    <style>
+            body{
+                background-color:lightgoldenrodyellow;
+                opacity:0.9;
+            }
+            *{
+                margin:0px;
+                padding: 0px;
+            }
+             body{
+                background-color:lightgoldenrodyellow;
+                opacity:0.9;
+            }
+            #hd{
+                font-size: xx-large;
+                font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            }
+            button{
+                border-radius: 5px;
+                padding:3px 5px 3px 5px;
+                border: 2px solid cyan;
+                font-size: medium;
+            }
+            #rgr:hover,#lgn:hover{
+                text-decoration: underline;
+            }
+            label{
+                font-size: xx-large;
+            }
+            input{
+                height: 25px;
+                width: 200px;
+                border-radius: 10px;
+                border:2px solid; 
+            }
+            #sbtn,
+            #rbtn {
+                padding:0px 10px 0px 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+                font-weight: 400;
+             }
+            #sbtn:hover,#rbtn:hover {
+                background-color: #0b8be0;
+            }
+            #nav{
+                width:100%;
+                height:100px;
+                background-color: #00abe4;
+                opacity: 0.9;
+                border: 5px solid cyan;
+            }
+            #tit,#vle{
+                display:inline;
+                padding:0px 10px 0px 10px;
+            }
+            #tit{
+                margin-top: 15px;
+                font-size: 50px;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #vle{
+                float: right;
+                margin-top: -30px;
+            }
+            #abt,#rgr,#lgn{
+                padding-left: 320px;
+                text-decoration: none;
+                color:ivory;
+                font-size: x-large;
+            }
+            body{
+                background-color: #e9f1fa;
+            }
+            #content{
+                font-size: x-large;
+                line-height: 30px;
+                text-indent: 20%;
+                font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            footer{
+                margin-top: 3px;
+                background-color: #00abe4;
+                opacity: 0.9;
+                border: 5px solid cyan;
+            }
+            #container{
+                margin-left: 10%;
+                margin-right:10%;
+                border: 3px solid black;
+                border-radius: 5px;
+                height:200px;
+                width:80%;
+            }
+            #img1,#img2,#img3{
+                display: inline;
+                padding: 10px 30px 0px 30px;
+            }
+    </style>
+</head>
+<body>
+        <header id="nav">
+                <tr>
+                    <h1 id="tit">Elite Academy</h1>
+                    <ul id="vle">
+                        <a href="#" id="abt">About</a>
+                        <a href="Regist.html" id="rgr" target="_blank">Register</a>
+                        <a href="login.html" id="lgn" target="_self">Log in</a>
+                    </ul>
+                </tr>
+        </header>
+        <form action="user.html">
+            <center><br>
+                <h1 id="hd">login</h1><br><br>
+                <label for="name">Username: </label><input type="text" id="uname" placeholder="  Enter Your Name" required><br><br>
+                <label for="upass">Password: </label><input placeholder="  Enter Your Password"type="password" id="upass" required/><br /><br />
+                <button onclick="Validate()">Submit</button>
+                <button>Reset</button><br><br>
+                <a href="" id="fpass">Forgot password?</a>
+            </center>
+        </form>
+        <footer>
+            <center><br><br>
+                <li class="abt"><a href="#">About</a></li>
+                <li class="rgr"><a href="Regist.html" target="_blank">Register</a></li>
+                <li class="lgn"><a href="login.html" target="_self">Log in</a></li>
+                <br>
+                <h2>Communication Address</h2>
+                <address>253,ESR Road,<br>College Street,<br>Chennai-620675</address>
+                <p>&copy;Copyrights Reserved</p>
+                <p>All Rights Reserved</p><br>
+                </center>
+        </footer>
+    </body>
+</html>
